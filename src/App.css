@@ -1,38 +1,67 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Main content to adjust for navbar */
+.main-content {
+  display: flex;
+  height: 100%; /* Fill remaining space */
+  padding-top: 60px; /* Give space for fixed navbar */
+  background-color: black;
+}
+
+/* Left content styling */
+.left-content {
+  flex: 1;
+  padding: 3rem;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Right image styling */
+.right-image {
+  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #e0e0e0; /* Adjust color as desired */
 }
 
-.App-link {
-  color: #61dafb;
+.right-image img {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    padding-top: 50px; /* Adjust padding for smaller screens */
   }
-  to {
-    transform: rotate(360deg);
+
+  .right-image img {
+    width: 60%;
+  }
+}
+body {
+  background-color: #111;
+  background-image: radial-gradient(#333 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: moveDots 20s linear infinite;
+}
+
+@keyframes moveDots {
+  0% {
+    background-position: 10px 100px; /* or "10px 100px" if you want diagonal motion */
   }
 }

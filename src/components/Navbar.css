@@ -1,0 +1,79 @@
+/* General Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  /* Logo Styling */
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff9800; /* Accent color */
+  }
+  
+  /* Navbar Links Styling */
+  nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for links */
+  nav ul li a:hover {
+    color: #ff9800; /* Accent color */
+  }
+  
+  /* Active link styling */
+  nav ul li a.active {
+    color: #ff9800;
+    border-bottom: 2px solid #ff9800;
+  }
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      width: 100%;
+      position: relative;
+      top: 100%;
+      left: 0;
+      padding: 1rem;
+    }
+  
+    /* Display links when menu is active */
+    nav ul.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: inline-block;
+      font-size: 1.5rem;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  
