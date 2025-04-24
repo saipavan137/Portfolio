@@ -20,7 +20,7 @@ const Certifications = () => (
           </div>
           <div className="flip-card-back">
             <img
-              src="/images/Data Analysis.png"
+              src="/images/az900.jpg"
               alt="Microsoft Certificate"
               className="certificate-image"
             />
@@ -56,7 +56,7 @@ const Certifications = () => (
           <div className="flip-card-front">
             <div className="certification-icon">
               <img
-                src="/images/simplilearn logo.jpg"
+                src="/images/datacamp.png"
                 alt="Simplilearn "
                 className="certification-logo"
               />
@@ -68,75 +68,6 @@ const Certifications = () => (
             <img
               src="/images/machine learning.png"
               alt="Simplilearn Certificate"
-              className="certificate-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <div className="certification-icon">
-              <img
-                src="/images/microsoft logo.png"
-                alt="Cisco Logo"
-                className="certification-logo"
-              />
-            </div>
-            <h3>Data Analysis and Visualization with PowerBI</h3>
-            <p>Issued by Microsoft</p>
-          </div>
-          <div className="flip-card-back">
-            <img
-              src="/images/PowerBI.png"
-              alt="Cisco Certificate"
-              className="certificate-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <div className="certification-icon">
-              <img
-                src="/images/hackerrank logo.png"
-                alt="Cisco Logo"
-                className="certification-logo"
-              />
-            </div>
-            <h3>SQL</h3>
-            <p>Issued by HackerRank</p>
-          </div>
-          <div className="flip-card-back">
-            <img
-              src="/images/SQL.png"
-              alt="Hackerrank Certificate"
-              className="certificate-image"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <div className="certification-icon">
-              <img
-                src="/images/udemy logo.png"
-                alt="Cisco Logo"
-                className="certification-logo"
-              />
-            </div>
-            <h3>Web Development</h3>
-            <p>Issued by Udemy</p>
-          </div>
-          <div className="flip-card-back">
-            <img
-              src="/images/web development.png"
-              alt="Udemy Certificate"
               className="certificate-image"
             />
           </div>

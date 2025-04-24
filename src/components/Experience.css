@@ -11,7 +11,7 @@
   margin-bottom: 2rem;
   color: #333;
   font-weight: bold;
-  border-bottom: 2px solid #ff9800;
+  border-bottom: 2px solid #176eb4;
   display: inline-block;
 }
 
@@ -40,13 +40,14 @@
 /* Job title styling */
 .job-title {
   font-size: 1.5rem;
-  color: #ff9800;
+  color: #176eb4;
   margin-bottom: 3px; /* Reduced bottom margin */
 }
 
 /* Company and duration info */
 .company {
   font-weight: bold;
+  font-size: 18px;
   color: #333;
   margin-bottom: 2px; /* Reduced bottom margin */
 }
@@ -54,11 +55,14 @@
 .job-duration {
   font-size: 0.9rem;
   color: #666;
+  font-weight: 500px;
+  font-size: 14px;
   margin-bottom: 5px; /* Reduced bottom margin */
 }
 
 .experience-details {
   list-style: none;
+  font-family: -apple-system "Helvetica Neue";
   padding: 0;
 }
 
@@ -72,7 +76,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: #ff9800;
+  background-color: #176eb4;
   border-radius: 50%;
   color: white;
   width: 30px;
@@ -92,4 +96,36 @@
     top: 10px;
     right: 10px;
   }
+}
+
+.experience-card {
+  width: 100%;
+  max-width: 900px; /* or any fixed width you prefer */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+}
+
+.experience-details li {
+  font-weight: 500;
+  font-size: 16px; /* or 500 for semi-bold */
+}
+
+.card,
+.experience-card,
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.experience-card:hover,
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }

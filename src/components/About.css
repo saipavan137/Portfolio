@@ -25,7 +25,7 @@
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: white;
-  border-bottom: 2px solid grey;
+  border-bottom: 3px solid #176eb4;
   display: inline-block;
 }
 
@@ -40,11 +40,11 @@
 .h3 {
   margin-top: 40px;
   font-size: 1.2rem;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .links a {
-  color: #eebf78;
+  color: #176eb4;
   text-decoration: none;
   font-size: 1.1rem;
   margin: 10px;
@@ -84,4 +84,17 @@ body {
   100% {
     background-position: 0 100px;
   }
+}
+
+.social-links,
+.h3 {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+
+.about-section h3 {
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 40px;
 }

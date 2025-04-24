@@ -12,6 +12,8 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
+  font-size: 16px;
+  font-family: -apple-system "Helvetica Neue";
 }
 
 .section-title {
@@ -19,7 +21,7 @@ body {
   margin-bottom: 2.5rem;
   color: #fff;
   font-weight: 700;
-  border-bottom: 3px solid #ff9800;
+  border-bottom: 3px solid #176eb4;
   display: inline-block;
 }
 
@@ -36,7 +38,7 @@ body {
   top: 0;
   bottom: 0;
   width: 4px;
-  background-color: #ff9800;
+  background-color: #176eb4;
   transform: translateX(-50%);
   z-index: 0;
 }
@@ -70,7 +72,7 @@ body {
   top: 20px;
   width: 40px;
   height: 40px;
-  background-color: #ff9800;
+  background-color: #176eb4;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -94,11 +96,11 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
-  color: #ff9800;
+  color: #176eb4;
   font-weight: bold;
   padding: 6px 12px;
   border-radius: 12px;
-  border: 2px solid #ff9800;
+  border: 2px solid #176eb4;
   font-size: 0.95rem;
   z-index: 2;
 }
@@ -175,6 +177,6 @@ body {
   margin-bottom: 2rem;
   color: #ffffff !important;
   font-weight: 700;
-  border-bottom: 3px solid #ff9800;
+  border-bottom: 3px solid #176eb4;
   display: inline-block;
 }

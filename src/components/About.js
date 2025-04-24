@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
-  faHackerrank,
+  faCodepen,
 } from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
@@ -42,7 +42,8 @@ const About = () => {
 
           {/* Social Media Links with Icons */}
           <div className="social-links">
-            <h3>Connect with Me</h3>
+            <h3 className="contact-heading">Connect with Me</h3>
+
             <div className="links">
               <a
                 href="https://www.linkedin.com/in/venkata-sai-pavan-bommuluri-9921b7126/"
@@ -59,11 +60,11 @@ const About = () => {
                 <FontAwesomeIcon icon={faGithub} size="lg" /> GitHub
               </a>
               <a
-                href="https://www.hackerrank.com"
+                href="https://leetcode.com/u/vbommul1/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faHackerrank} size="lg" /> HackerRank
+                <FontAwesomeIcon icon={faCodepen} size="lg" /> leetcode
               </a>
               {/* Download Resume Button */}
               <a
