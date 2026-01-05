@@ -22,7 +22,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="hero-name text-4xl md:text-5xl lg:text-6xl text-[#e8dcc0] font-normal mb-8 tracking-wider"
+          className="hero-name text-4xl md:text-5xl lg:text-6xl text-[#8b6f47] font-normal mb-8 tracking-wider"
         >
           VENKATA SAI PAVAN BOMMULURI
         </motion.h1>
@@ -34,23 +34,23 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="space-y-6"
         >
-          <h2 className="hero-title text-xl md:text-2xl text-[#e8dcc0] leading-tight tracking-tight">
+          <h2 className="hero-title text-xl md:text-2xl text-[#8b6f47] leading-tight tracking-tight">
             FULL STACK
           </h2>
           
-          <h2 className="hero-title text-xl md:text-2xl text-[#e8dcc0] leading-tight tracking-tight">
+          <h2 className="hero-title text-xl md:text-2xl text-[#8b6f47] leading-tight tracking-tight">
             DEVELOPER & DATA ENGINEER
           </h2>
           
           {/* Horizontal line separator */}
-          <div className="w-32 md:w-48 h-px bg-[#e8dcc0] mx-auto my-6"></div>
+          <div className="w-32 md:w-48 h-px bg-[#8b6f47] mx-auto my-6"></div>
           
           {/* Italicized description */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="hero-description text-base md:text-lg text-[#e8dcc0] max-w-2xl mx-auto"
+            className="hero-description text-base md:text-lg text-[#8b6f47] max-w-2xl mx-auto"
           >
             I enjoy building clean, scalable systems that solve real-world problems and improve user experience.
           </motion.p>
@@ -64,12 +64,12 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.8 }}
         className="absolute bottom-8 flex flex-col items-center"
       >
-        <span className="text-sm mb-2 text-[#e8dcc0]">SCROLL</span>
+        <span className="text-sm mb-2 text-[#8b6f47]">SCROLL</span>
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
         >
-          <ChevronDown className="w-6 h-6 text-[#e8dcc0]" />
+          <ChevronDown className="w-6 h-6 text-[#8b6f47]" />
         </motion.div>
       </motion.div>
     </section>

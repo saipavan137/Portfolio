@@ -62,7 +62,7 @@ export default function Awards() {
           <div className="mb-4">
             <span className="text-2xl md:text-3xl text-[#DAA520]">★★★</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-[#e8dcc0]">
+          <h2 className="text-4xl md:text-6xl font-bold text-[#8b6f47]">
             CERTIFICATIONS
           </h2>
         </motion.div>
@@ -78,19 +78,19 @@ export default function Awards() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-[#e8dcc0]/10 border border-[#e8dcc0]/20 rounded-lg p-6"
+                  className="bg-[#8b6f47]/10 border border-[#8b6f47]/20 rounded-lg p-6"
                 >
-                  <span className="text-xs text-[#e8dcc0]/70 uppercase mb-2 block">
+                  <span className="text-xs text-[#8b6f47]/70 uppercase mb-2 block">
                     {cert.type}
                   </span>
-                  <h4 className="text-xl font-bold mb-2 text-[#e8dcc0]">{cert.title}</h4>
-                  <p className="text-sm text-[#e8dcc0]/80 mb-1">{cert.issuer}</p>
-                  <p className="text-sm text-[#e8dcc0]/60 mb-4">{cert.date}</p>
+                  <h4 className="text-xl font-bold mb-2 text-[#8b6f47]">{cert.title}</h4>
+                  <p className="text-sm text-[#8b6f47]/80 mb-1">{cert.issuer}</p>
+                  <p className="text-sm text-[#8b6f47]/60 mb-4">{cert.date}</p>
                   <a
                     href={cert.viewUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-[#DAA520] hover:text-[#e8dcc0] flex items-center gap-1"
+                    className="text-sm text-[#DAA520] hover:text-[#8b6f47] flex items-center gap-1"
                   >
                     VIEW <ExternalLink className="w-3 h-3" />
                   </a>

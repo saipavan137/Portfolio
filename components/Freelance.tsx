@@ -36,8 +36,8 @@ export default function Freelance() {
           <div className="mb-4">
             <span className="text-2xl md:text-3xl text-[#DAA520]">★★★</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-[#e8dcc0]">PROJECTS</h2>
-          <p className="text-lg md:text-xl text-[#e8dcc0]/80 mt-4">
+          <h2 className="text-4xl md:text-6xl font-bold text-[#8b6f47]">PROJECTS</h2>
+          <p className="text-lg md:text-xl text-[#8b6f47]/80 mt-4">
             Personal projects and open-source contributions showcasing technical skills
           </p>
         </motion.div>
@@ -50,21 +50,21 @@ export default function Freelance() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-[#e8dcc0]/10 border border-[#e8dcc0]/20 rounded-lg p-8"
+              className="bg-[#8b6f47]/10 border border-[#8b6f47]/20 rounded-lg p-8"
             >
-              <span className="text-xs text-[#e8dcc0]/70 uppercase mb-2 block">
+              <span className="text-xs text-[#8b6f47]/70 uppercase mb-2 block">
                 {project.type}
               </span>
-              <h3 className="text-2xl font-bold mb-4 text-[#e8dcc0]">{project.title}</h3>
-              <p className="text-[#e8dcc0] mb-4">{project.description}</p>
+              <h3 className="text-2xl font-bold mb-4 text-[#8b6f47]">{project.title}</h3>
+              <p className="text-[#8b6f47] mb-4">{project.description}</p>
               {project.techStack && (
                 <div className="mb-4">
-                  <p className="text-xs text-[#e8dcc0]/70 mb-2">Tech Stack:</p>
+                  <p className="text-xs text-[#8b6f47]/70 mb-2">Tech Stack:</p>
                   <div className="flex flex-wrap gap-2">
                     {project.techStack.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="text-xs bg-[#e8dcc0]/20 px-2 py-1 rounded text-[#e8dcc0]"
+                        className="text-xs bg-[#8b6f47]/20 px-2 py-1 rounded text-[#8b6f47]"
                       >
                         {tech}
                       </span>
@@ -76,7 +76,7 @@ export default function Freelance() {
                 href={project.viewUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[#DAA520] hover:text-[#e8dcc0] transition-colors"
+                className="inline-flex items-center gap-2 text-[#DAA520] hover:text-[#8b6f47] transition-colors"
               >
                 VIEW ON GITHUB <ExternalLink className="w-4 h-4" />
               </a>
@@ -89,15 +89,15 @@ export default function Freelance() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center bg-[#e8dcc0]/10 border border-[#e8dcc0]/20 rounded-lg p-12"
+          className="text-center bg-[#8b6f47]/10 border border-[#8b6f47]/20 rounded-lg p-12"
         >
-          <h3 className="text-3xl md:text-4xl font-bold mb-6 text-[#e8dcc0]">
+          <h3 className="text-3xl md:text-4xl font-bold mb-6 text-[#8b6f47]">
             Interested in collaborating?
           </h3>
-          <p className="text-xl mb-8 text-[#e8dcc0]">LET&apos;S WORK TOGETHER</p>
+          <p className="text-xl mb-8 text-[#8b6f47]">LET&apos;S WORK TOGETHER</p>
           <a
             href="#contact"
-            className="inline-block bg-[#e8dcc0] text-[#1f1f1f] px-8 py-3 rounded-lg font-semibold hover:bg-[#DAA520] transition-colors"
+            className="inline-block bg-[#8b6f47] text-[#1f1f1f] px-8 py-3 rounded-lg font-semibold hover:bg-[#DAA520] transition-colors"
           >
             Get In Touch
           </a>

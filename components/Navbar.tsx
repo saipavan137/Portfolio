@@ -42,7 +42,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-6"
     >
-      <div className="backdrop-blur-xl bg-[#2a2a2a]/60 border border-[#e8dcc0]/30 rounded-2xl px-6 py-3 shadow-2xl shadow-black/30">
+      <div className="backdrop-blur-xl bg-[#2a2a2a]/60 border border-[#8b6f47]/30 rounded-2xl px-6 py-3 shadow-2xl shadow-black/30">
         <div className="flex items-center">
           {navItems.map((item, index) => (
             <div key={item.name} className="flex items-center">
@@ -50,14 +50,14 @@ export default function Navbar() {
                 href={item.href}
                 className={`text-sm font-medium transition-all duration-200 px-3 ${
                   activeSection === item.name
-                    ? "text-[#e8dcc0] font-semibold drop-shadow-lg"
-                    : "text-[#e8dcc0]/90 hover:text-[#e8dcc0] drop-shadow-md"
+                    ? "text-[#F4E4BC] font-semibold drop-shadow-lg"
+                    : "text-[#F4E4BC]/90 hover:text-[#F4E4BC] drop-shadow-md"
                 }`}
               >
                 {item.name}
               </a>
               {index < navItems.length - 1 && (
-                <span className="h-4 w-px bg-[#e8dcc0]/30"></span>
+                <span className="h-4 w-px bg-[#F4E4BC]/30"></span>
               )}
             </div>
           ))}

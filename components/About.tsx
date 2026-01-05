@@ -14,7 +14,7 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
           whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
-          className="parchment-container relative border-4 border-[#8b6f47] shadow-2xl hover:shadow-[0_20px_60px_rgba(0,0,0,0.6)] transition-shadow duration-300"
+          className="parchment-container relative shadow-2xl hover:shadow-[0_20px_60px_rgba(0,0,0,0.6)] transition-shadow duration-300"
         >
           {/* Title */}
           <motion.div 
@@ -92,37 +92,37 @@ export default function About() {
                 className="text-xs md:text-sm text-[#1f1f1f] leading-relaxed"
                 whileHover={{ x: 5, transition: { duration: 0.2 } }}
               >
-                <span className="font-bold bg-[#f5e6d3]/50 px-1.5 py-0.5 rounded">SEEKING:</span> SDE • FULLSTACK DEVELOPER • FRONT END AND BACK END ENGINEER • DATA ENGINEER
+                <span className="font-bold bg-[#F4E4BC]/50 px-1.5 py-0.5 rounded">SEEKING:</span> SDE • FULLSTACK DEVELOPER • FRONT END AND BACK END ENGINEER • DATA ENGINEER
               </motion.p>
               <motion.p 
                 className="text-xs md:text-sm text-[#1f1f1f] leading-relaxed"
                 whileHover={{ x: 5, transition: { duration: 0.2 } }}
               >
-                <span className="font-bold bg-[#f5e6d3]/50 px-1.5 py-0.5 rounded">EXPERTISE:</span> DATA ECO SYSTEM: NUMPY, PANDAS, POWER BI, AWS (S3, LAMBDA, STEP FUNCTIONS) • DISTRIBUTIONS AND TOOLS: CLOUDERA 5.12, GITHUB, DOCKER • DATABASES: SQL SERVER, MYSQL, MONGODB • LANGUAGES: PYTHON, SQL, JAVA, UNIX SHELL SCRIPT, NOSQL • OPERATING SYSTEMS: LINUX AND WINDOWS
+                <span className="font-bold bg-[#F4E4BC]/50 px-1.5 py-0.5 rounded">EXPERTISE:</span> DATA ECO SYSTEM: NUMPY, PANDAS, POWER BI, AWS (S3, LAMBDA, STEP FUNCTIONS) • DISTRIBUTIONS AND TOOLS: CLOUDERA 5.12, GITHUB, DOCKER • DATABASES: SQL SERVER, MYSQL, MONGODB • LANGUAGES: PYTHON, SQL, JAVA, UNIX SHELL SCRIPT, NOSQL • OPERATING SYSTEMS: LINUX AND WINDOWS
               </motion.p>
               <motion.p 
                 className="text-xs md:text-sm text-[#1f1f1f] leading-relaxed"
                 whileHover={{ x: 5, transition: { duration: 0.2 } }}
               >
-                <span className="font-bold bg-[#f5e6d3]/50 px-1.5 py-0.5 rounded">PROVEN TRACK RECORD:</span> 3.5+ YEARS BUILDING PRODUCTION-GRADE WEB APPLICATIONS AND DATA ENGINEERING
+                <span className="font-bold bg-[#F4E4BC]/50 px-1.5 py-0.5 rounded">PROVEN TRACK RECORD:</span> 3.5+ YEARS BUILDING PRODUCTION-GRADE WEB APPLICATIONS AND DATA ENGINEERING
               </motion.p>
               <motion.p 
                 className="text-xs md:text-sm text-[#1f1f1f] leading-relaxed"
                 whileHover={{ x: 5, transition: { duration: 0.2 } }}
               >
-                <span className="font-bold bg-[#f5e6d3]/50 px-1.5 py-0.5 rounded">SPECIALIZATION:</span> END-TO-END DEVELOPMENT • SCALABLE SAAS PLATFORMS • CLOUD ARCHITECTURE • AI INTEGRATION
+                <span className="font-bold bg-[#F4E4BC]/50 px-1.5 py-0.5 rounded">SPECIALIZATION:</span> END-TO-END DEVELOPMENT • SCALABLE SAAS PLATFORMS • CLOUD ARCHITECTURE • AI INTEGRATION
               </motion.p>
               <motion.p 
                 className="text-xs md:text-sm text-[#1f1f1f] leading-relaxed"
                 whileHover={{ x: 5, transition: { duration: 0.2 } }}
               >
-                <span className="font-bold bg-[#f5e6d3]/50 px-1.5 py-0.5 rounded">EDUCATION:</span> MASTERS IN INFORMATION TECHNOLOGY AT UNCC
+                <span className="font-bold bg-[#F4E4BC]/50 px-1.5 py-0.5 rounded">EDUCATION:</span> MASTERS IN INFORMATION TECHNOLOGY AT UNCC
               </motion.p>
               <motion.p 
                 className="text-xs md:text-sm text-[#1f1f1f] leading-relaxed"
                 whileHover={{ x: 5, transition: { duration: 0.2 } }}
               >
-                <span className="font-bold bg-[#f5e6d3]/50 px-1.5 py-0.5 rounded">AVAILABLE FOR IMMEDIATE HIRE • OPEN TO RELOCATION</span>
+                <span className="font-bold bg-[#F4E4BC]/50 px-1.5 py-0.5 rounded">AVAILABLE FOR IMMEDIATE HIRE • OPEN TO RELOCATION</span>
               </motion.p>
             </div>
           </motion.div>
@@ -139,7 +139,7 @@ export default function About() {
               href="https://www.linkedin.com/in/venkata-sai-pavan-bommuluri-9921b7126/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-[#f5e6d3] border-2 border-[#1f1f1f] rounded-lg flex items-center justify-center hover:bg-[#e8dcc0] transition-colors shadow-sm"
+              className="w-10 h-10 bg-[#F4E4BC] border-2 border-[#1f1f1f] rounded-lg flex items-center justify-center hover:bg-[#8b6f47] transition-colors shadow-sm"
               aria-label="LinkedIn"
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
@@ -148,7 +148,7 @@ export default function About() {
             </motion.a>
             <motion.a
               href="mailto:bommulurisai137@gmail.com"
-              className="w-10 h-10 bg-[#f5e6d3] border-2 border-[#1f1f1f] rounded-lg flex items-center justify-center hover:bg-[#e8dcc0] transition-colors shadow-sm"
+              className="w-10 h-10 bg-[#F4E4BC] border-2 border-[#1f1f1f] rounded-lg flex items-center justify-center hover:bg-[#8b6f47] transition-colors shadow-sm"
               aria-label="Email"
               whileHover={{ scale: 1.1, rotate: -5 }}
               whileTap={{ scale: 0.95 }}
@@ -159,7 +159,7 @@ export default function About() {
               href="https://github.com/saipavan137"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-[#f5e6d3] border-2 border-[#1f1f1f] rounded-lg flex items-center justify-center hover:bg-[#e8dcc0] transition-colors shadow-sm"
+              className="w-10 h-10 bg-[#F4E4BC] border-2 border-[#1f1f1f] rounded-lg flex items-center justify-center hover:bg-[#8b6f47] transition-colors shadow-sm"
               aria-label="GitHub"
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
@@ -168,7 +168,7 @@ export default function About() {
             </motion.a>
             <motion.a
               href="tel:+19803488088"
-              className="w-10 h-10 bg-[#f5e6d3] border-2 border-[#1f1f1f] rounded-lg flex items-center justify-center hover:bg-[#e8dcc0] transition-colors shadow-sm"
+              className="w-10 h-10 bg-[#F4E4BC] border-2 border-[#1f1f1f] rounded-lg flex items-center justify-center hover:bg-[#8b6f47] transition-colors shadow-sm"
               aria-label="Phone"
               whileHover={{ scale: 1.1, rotate: -5 }}
               whileTap={{ scale: 0.95 }}

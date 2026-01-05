@@ -117,7 +117,7 @@ export default function Experience() {
           <div className="mb-4">
             <span className="text-2xl md:text-3xl text-[#DAA520]">★★★</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-[#e8dcc0]">WORK RECORDS</h2>
+          <h2 className="text-4xl md:text-6xl font-bold text-[#8b6f47]">WORK RECORDS</h2>
         </motion.div>
 
         <div className="space-y-12">
@@ -128,7 +128,7 @@ export default function Experience() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className="bg-[#e8dcc0]/10 border border-[#e8dcc0]/20 rounded-lg p-8"
+              className="bg-[#8b6f47]/10 border border-[#8b6f47]/20 rounded-lg p-8"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
                 <div>
@@ -140,12 +140,12 @@ export default function Experience() {
                       <CheckCircle2 className="w-5 h-5 text-green-400" />
                     )}
                   </div>
-                  <p className="text-sm text-[#e8dcc0]/70 uppercase mb-1">
+                  <p className="text-sm text-[#8b6f47]/70 uppercase mb-1">
                     {exp.type}
                   </p>
-                  <p className="text-xl font-semibold mb-2 text-[#e8dcc0]">{exp.company}</p>
-                  <p className="text-[#e8dcc0]/80">{exp.period}</p>
-                  <p className="text-[#e8dcc0]/80">{exp.location}</p>
+                  <p className="text-xl font-semibold mb-2 text-[#8b6f47]">{exp.company}</p>
+                  <p className="text-[#8b6f47]/80">{exp.period}</p>
+                  <p className="text-[#8b6f47]/80">{exp.location}</p>
                 </div>
               </div>
 
@@ -154,8 +154,8 @@ export default function Experience() {
                 <ul className="space-y-3">
                   {exp.achievements.map((achievement, achIndex) => (
                     <li key={achIndex} className="flex items-start">
-                      <span className="mr-2 text-[#e8dcc0]/70">▸</span>
-                      <span className="text-[#e8dcc0]">{achievement}</span>
+                      <span className="mr-2 text-[#8b6f47]/70">▸</span>
+                      <span className="text-[#8b6f47]">{achievement}</span>
                     </li>
                   ))}
                 </ul>
@@ -167,7 +167,7 @@ export default function Experience() {
                   {exp.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="bg-[#e8dcc0]/20 px-3 py-1 rounded text-sm text-[#e8dcc0]"
+                      className="bg-[#8b6f47]/20 px-3 py-1 rounded text-sm text-[#8b6f47]"
                     >
                       {tech}
                     </span>
@@ -191,7 +191,7 @@ export default function Experience() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mt-12 text-[#e8dcc0]/80"
+          className="text-center mt-12 text-[#8b6f47]/80"
         >
           <p>* 3+ years of professional software engineering and data engineering experience</p>
         </motion.div>

@@ -5,8 +5,8 @@
 :root {
   --background: #2a2a2a;
   --foreground: #DAA520;
-  --beige: #e8dcc0;
-  --dark-beige: #c9b99b;
+  --beige: #8b6f47;
+  --dark-beige: #6d5831;
 }
 
 * {
@@ -90,7 +90,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #e8dcc0;
+  background: #947838;
 }
 
 /* Selection */
@@ -100,38 +100,67 @@ body {
 
 /* Parchment/Torn Edge Effect */
 .parchment-container {
-  background-color: #f5e6d3;
+  background-color: #F4E4BC;
   position: relative;
   padding: 2rem;
-  /* Double border effect - outer dark brown, inner lighter */
-  border: 4px solid #8b6f47;
+  /* Elegant multi-layer border design */
+  border: 5px solid #8b6f47;
+  border-radius: 12px;
   box-shadow: 
-    inset 0 0 0 2px #c9b99b,
-    0 0 0 2px #8b6f47,
-    0 10px 40px rgba(0, 0, 0, 0.5);
-  clip-path: polygon(
-    0% 12px, 12px 0%, calc(100% - 12px) 0%, 100% 12px,
-    100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0% calc(100% - 12px)
-  );
+    /* Inner light border */
+    inset 0 0 0 3px #DAA520,
+    /* Outer dark border shadow */
+    0 0 0 2px #1f1f1f,
+    /* Main shadow */
+    0 15px 50px rgba(0, 0, 0, 0.4),
+    /* Outer glow */
+    0 0 30px rgba(139, 111, 71, 0.3);
   /* Dynamic border glow animation */
   animation: borderGlow 4s ease-in-out infinite;
+}
+
+/* Decorative corner elements */
+.parchment-container::before,
+.parchment-container::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #8b6f47;
+  z-index: 1;
+}
+
+.parchment-container::before {
+  top: -3px;
+  left: -3px;
+  border-right: none;
+  border-bottom: none;
+  border-top-left-radius: 12px;
+}
+
+.parchment-container::after {
+  bottom: -3px;
+  right: -3px;
+  border-left: none;
+  border-top: none;
+  border-bottom-right-radius: 12px;
 }
 
 @keyframes borderGlow {
   0%, 100% {
     box-shadow: 
-      inset 0 0 0 2px #c9b99b,
-      0 0 0 2px #8b6f47,
-      0 10px 40px rgba(0, 0, 0, 0.5),
-      0 0 15px rgba(139, 111, 71, 0.2);
+      inset 0 0 0 3px #DAA520,
+      0 0 0 2px #1f1f1f,
+      0 15px 50px rgba(0, 0, 0, 0.4),
+      0 0 30px rgba(139, 111, 71, 0.3);
     border-color: #8b6f47;
   }
   50% {
     box-shadow: 
-      inset 0 0 0 2px #e8dcc0,
-      0 0 0 2px #DAA520,
-      0 10px 40px rgba(0, 0, 0, 0.5),
-      0 0 25px rgba(218, 165, 32, 0.4);
+      inset 0 0 0 3px #FFD700,
+      0 0 0 2px #1f1f1f,
+      0 15px 50px rgba(0, 0, 0, 0.4),
+      0 0 40px rgba(218, 165, 32, 0.5);
     border-color: #DAA520;
   }
 }
@@ -143,18 +172,18 @@ body {
 @keyframes borderPulse {
   0%, 100% {
     box-shadow: 
-      inset 0 0 0 2px #c9b99b,
-      0 0 0 2px #8b6f47,
-      0 10px 40px rgba(0, 0, 0, 0.5),
-      0 0 20px rgba(139, 111, 71, 0.3);
+      inset 0 0 0 3px #DAA520,
+      0 0 0 2px #1f1f1f,
+      0 15px 50px rgba(0, 0, 0, 0.4),
+      0 0 30px rgba(139, 111, 71, 0.3);
     border-color: #8b6f47;
   }
   50% {
     box-shadow: 
-      inset 0 0 0 2px #e8dcc0,
-      0 0 0 4px #DAA520,
-      0 15px 50px rgba(0, 0, 0, 0.6),
-      0 0 35px rgba(218, 165, 32, 0.5);
+      inset 0 0 0 4px #FFD700,
+      0 0 0 3px #1f1f1f,
+      0 20px 60px rgba(0, 0, 0, 0.5),
+      0 0 50px rgba(218, 165, 32, 0.6);
     border-color: #DAA520;
   }
 }

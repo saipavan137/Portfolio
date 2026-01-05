@@ -88,7 +88,7 @@ export default function Projects() {
           <div className="mb-4">
             <span className="text-2xl md:text-3xl text-[#DAA520]">★★★</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-[#e8dcc0]">FEATURED WORK</h2>
+          <h2 className="text-4xl md:text-6xl font-bold text-[#8b6f47]">FEATURED WORK</h2>
         </motion.div>
 
         <div className="space-y-24">
@@ -99,17 +99,17 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="bg-[#e8dcc0]/10 border border-[#e8dcc0]/20 rounded-lg p-8 md:p-12"
+              className="bg-[#8b6f47]/10 border border-[#8b6f47]/20 rounded-lg p-8 md:p-12"
             >
               <div className="mb-6">
-                <span className="text-sm text-[#e8dcc0]/70">{project.caseNumber}</span>
+                <span className="text-sm text-[#8b6f47]/70">{project.caseNumber}</span>
                 <div className="mt-2 mb-4">
                   <span className="text-2xl text-[#DAA520]">★★★</span>
                 </div>
-                <h3 className="text-3xl md:text-4xl font-bold mb-4 text-[#e8dcc0]">
+                <h3 className="text-3xl md:text-4xl font-bold mb-4 text-[#8b6f47]">
                   {project.title}
                 </h3>
-                <p className="text-lg text-[#e8dcc0]/80 mb-6">{project.description}</p>
+                <p className="text-lg text-[#8b6f47]/80 mb-6">{project.description}</p>
               </div>
 
               <div className="mb-6">
@@ -118,7 +118,7 @@ export default function Projects() {
                   {project.techStack.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="bg-[#e8dcc0]/20 px-3 py-1 rounded text-sm text-[#e8dcc0]"
+                      className="bg-[#8b6f47]/20 px-3 py-1 rounded text-sm text-[#8b6f47]"
                     >
                       {tech}
                     </span>
@@ -132,7 +132,7 @@ export default function Projects() {
                   {project.achievements.map((achievement, achIndex) => (
                     <li key={achIndex} className="flex items-start">
                       <span className="mr-2">▸</span>
-                      <span className="text-[#e8dcc0]">{achievement}</span>
+                      <span className="text-[#8b6f47]">{achievement}</span>
                     </li>
                   ))}
                 </ul>
@@ -144,7 +144,7 @@ export default function Projects() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-[#e8dcc0]/20 hover:bg-[#e8dcc0]/30 text-[#e8dcc0] px-4 py-2 rounded transition-colors"
+                    className="flex items-center gap-2 bg-[#8b6f47]/20 hover:bg-[#8b6f47]/30 text-[#8b6f47] px-4 py-2 rounded transition-colors"
                   >
                     <ExternalLink className="w-4 h-4" />
                     <span>LIVE</span>
@@ -155,7 +155,7 @@ export default function Projects() {
                     href={project.codeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-[#e8dcc0]/20 hover:bg-[#e8dcc0]/30 text-[#e8dcc0] px-4 py-2 rounded transition-colors"
+                    className="flex items-center gap-2 bg-[#8b6f47]/20 hover:bg-[#8b6f47]/30 text-[#8b6f47] px-4 py-2 rounded transition-colors"
                   >
                     <Github className="w-4 h-4" />
                     <span>CODE</span>

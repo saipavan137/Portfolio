@@ -207,8 +207,8 @@ export default function Skills() {
           <div className="mb-4">
             <span className="text-2xl md:text-3xl text-[#DAA520]">★★★</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-[#e8dcc0]">SKILL INVENTORY</h2>
-          <p className="text-lg md:text-xl text-[#e8dcc0]/80 mt-4">
+          <h2 className="text-4xl md:text-6xl font-bold text-[#8b6f47]">SKILL INVENTORY</h2>
+          <p className="text-lg md:text-xl text-[#8b6f47]/80 mt-4">
             Known proficiencies and technical capabilities
           </p>
         </motion.div>
@@ -217,7 +217,7 @@ export default function Skills() {
           <div className="flex items-center mb-8">
             <button
               onClick={() => handleScroll("left")}
-              className="text-[#e8dcc0]/60 hover:text-[#e8dcc0] transition-colors mr-4"
+              className="text-[#8b6f47]/60 hover:text-[#8b6f47] transition-colors mr-4"
               aria-label="Scroll left"
             >
               <svg
@@ -234,10 +234,10 @@ export default function Skills() {
                 />
               </svg>
             </button>
-            <span className="text-sm text-[#e8dcc0]/70">←Scroll to explore skills→</span>
+            <span className="text-sm text-[#8b6f47]/70">←Scroll to explore skills→</span>
             <button
               onClick={() => handleScroll("right")}
-              className="text-[#e8dcc0]/60 hover:text-[#e8dcc0] transition-colors ml-4"
+              className="text-[#8b6f47]/60 hover:text-[#8b6f47] transition-colors ml-4"
               aria-label="Scroll right"
             >
               <svg
@@ -268,7 +268,7 @@ export default function Skills() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-[#f5e6d3] border-2 border-[#8b6f47] rounded-lg p-4 min-w-[240px] max-w-[240px]"
+                  className="bg-[#F4E4BC] border-2 border-[#8b6f47] rounded-lg p-4 min-w-[240px] max-w-[240px]"
                 >
                   <h3 className="text-base font-bold mb-1.5 text-[#1f1f1f] uppercase">{category.title}</h3>
                   <p className="text-xs text-[#1f1f1f] mb-2">
@@ -295,7 +295,7 @@ export default function Skills() {
           transition={{ duration: 0.8 }}
           className="mt-16 flex justify-center"
         >
-          <div className="bg-[#f5e6d3] border-2 border-[#8b6f47] rounded-lg p-8 max-w-4xl w-full">
+          <div className="bg-[#F4E4BC] border-2 border-[#8b6f47] rounded-lg p-8 max-w-4xl w-full">
             <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 text-[#1f1f1f]">
               CORE COMPETENCIES
             </h3>
@@ -307,7 +307,7 @@ export default function Skills() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
-                  className="bg-white border border-[#1f1f1f] rounded px-6 py-3"
+                  className="bg-[#F4E4BC] border border-[#1f1f1f] rounded px-6 py-3"
                 >
                   <span className="text-sm md:text-base text-[#1f1f1f] font-medium">{competency}</span>
                 </motion.div>
