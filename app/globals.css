@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #2a2a2a;
+  --foreground: #DAA520;
+  --beige: #e8dcc0;
+  --dark-beige: #c9b99b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,400;1,400&display=swap');
+
+body {
+  background-color: #1f1f1f;
+  /* Sandpaper texture effect */
+  background-image: 
+    /* Fine grain texture */
+    radial-gradient(circle at 0px 0px, rgba(255,255,255,0.03) 1px, transparent 0),
+    radial-gradient(circle at 1px 1px, rgba(0,0,0,0.15) 1px, transparent 0),
+    radial-gradient(circle at 2px 2px, rgba(255,255,255,0.02) 1px, transparent 0),
+    radial-gradient(circle at 3px 3px, rgba(0,0,0,0.1) 1px, transparent 0),
+    /* Medium grain */
+    radial-gradient(circle at 4px 4px, rgba(255,255,255,0.025) 1.5px, transparent 0),
+    radial-gradient(circle at 5px 5px, rgba(0,0,0,0.08) 1.5px, transparent 0);
+  background-size: 
+    4px 4px,
+    3px 3px,
+    5px 5px,
+    4px 4px,
+    6px 6px,
+    5px 5px;
+  background-position:
+    0 0,
+    1px 1px,
+    2px 2px,
+    3px 3px,
+    4px 4px,
+    5px 5px;
+  color: var(--beige);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Hero section fonts */
+.hero-name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.hero-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.hero-description {
+  font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DAA520;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e8dcc0;
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(218, 165, 32, 0.3);
+}
+
+/* Parchment/Torn Edge Effect */
+.parchment-container {
+  background-color: #f5e6d3;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 
+    0 0 0 6px #8b6f47,
+    0 10px 40px rgba(0, 0, 0, 0.5);
+  clip-path: polygon(
+    0% 12px, 12px 0%, calc(100% - 12px) 0%, 100% 12px,
+    100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0% calc(100% - 12px)
+  );
+}
+
+/* Removed diagonal lines from parchment container */
+
+/* Torn edge divider effect */
+.torn-edge {
+  position: relative;
+}
+
