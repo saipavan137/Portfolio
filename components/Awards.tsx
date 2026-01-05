@@ -9,35 +9,42 @@ const certifications = [
     title: "AWS Certified AI Practitioner",
     issuer: "AWS",
     date: "May 21, 2025",
-    viewUrl: "#",
+    viewUrl: "https://drive.google.com/file/d/1FU1UIcXv9n3j0mnDUkXfdicB6qVqmPor/view?usp=drive_link",
+  },
+  {
+    type: "CERTIFICATION",
+    title: "AWS Certified Cloud Practitioner",
+    issuer: "AWS",
+    date: "Oct 7, 2025",
+    viewUrl: "https://drive.google.com/file/d/1w26pmlejepzLv3LP_uwp_jxMs0a3XEhV/view?usp=drive_link",
   },
   {
     type: "CERTIFICATION",
     title: "AWS Academy Graduate - Machine Learning Foundations",
     issuer: "AWS Academy",
     date: "Feb 22, 2025",
-    viewUrl: "https://www.credly.com/go/9vnPH7nS",
+    viewUrl: "https://drive.google.com/file/d/100yOSdQ4VvGtnl8SQK6SpGLK4ca0EcFw/view?usp=drive_link",
   },
   {
     type: "CERTIFICATION",
     title: "AWS Academy Graduate - Data Engineering",
     issuer: "AWS Academy",
     date: "Apr 27, 2025",
-    viewUrl: "https://www.credly.com/go/TyyTghr5",
+    viewUrl: "https://drive.google.com/file/d/1oXmg8vZr7hAYbzMsz0oWB_AY4BkPxmaT/view?usp=drive_link",
   },
   {
     type: "CERTIFICATION",
     title: "Microsoft Certified: Azure Fundamentals",
     issuer: "Microsoft",
     date: "July 10, 2024",
-    viewUrl: "#",
+    viewUrl: "https://drive.google.com/file/d/1Tx2Xd_Hg_efx6_a_FUQSG9qHKs2kaR-I/view?usp=drive_link",
   },
   {
     type: "CERTIFICATION",
     title: "Associate Data Engineer",
     issuer: "DataCamp",
     date: "Nov 30, 2025",
-    viewUrl: "#",
+    viewUrl: "https://www.datacamp.com/certificate/DEA0019976500434",
   },
 ];
 
@@ -81,6 +88,8 @@ export default function Awards() {
                   <p className="text-sm text-[#e8dcc0]/60 mb-4">{cert.date}</p>
                   <a
                     href={cert.viewUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-sm text-[#DAA520] hover:text-[#e8dcc0] flex items-center gap-1"
                   >
                     VIEW <ExternalLink className="w-3 h-3" />

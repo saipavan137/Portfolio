@@ -36,6 +36,10 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#1f1f1f] uppercase">
               ABOUT ME
             </h2>
+            {/* Decorative divider line */}
+            <div className="mt-4 mb-2 flex items-center justify-center">
+              <div className="w-full max-w-md border-t-2 border-[#8b6f47]"></div>
+            </div>
           </motion.div>
 
           {/* Profile Picture */}
@@ -47,14 +51,17 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <motion.div 
-              className="relative w-40 h-40 md:w-52 md:h-52 border-4 border-[#1f1f1f] overflow-hidden rounded-lg shadow-lg"
+              className="relative w-40 h-40 md:w-52 md:h-52 overflow-hidden shadow-lg"
               whileHover={{ scale: 1.05, rotate: 2 }}
               transition={{ duration: 0.3 }}
             >
+              {/* Double border effect - white inner, dark brown outer */}
+              <div className="absolute inset-0 border-2 border-white z-10 pointer-events-none"></div>
+              <div className="absolute inset-[-4px] border-4 border-[#8b6f47] z-0"></div>
               <img
                 src="/images/Profile Pro.jpeg"
                 alt="Venkata Sai Pavan Bommuluri"
-                className="w-full h-full object-cover hover:grayscale transition-all duration-500"
+                className="w-full h-full object-cover hover:grayscale transition-all duration-500 relative z-0"
               />
             </motion.div>
           </motion.div>
