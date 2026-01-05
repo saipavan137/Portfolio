@@ -17,12 +17,12 @@ export default function Hero() {
           <span className="text-3xl md:text-4xl text-[#DAA520]">★★★</span>
         </motion.div>
 
-        {/* Name in smaller font */}
+        {/* Name in larger font */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="hero-name text-xl md:text-2xl text-[#e8dcc0] font-normal mb-8 tracking-wider"
+          className="hero-name text-4xl md:text-5xl lg:text-6xl text-[#e8dcc0] font-normal mb-8 tracking-wider"
         >
           VENKATA SAI PAVAN BOMMULURI
         </motion.h1>
@@ -34,11 +34,11 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="space-y-6"
         >
-          <h2 className="hero-title text-4xl md:text-5xl lg:text-6xl text-[#e8dcc0] leading-tight tracking-tight">
+          <h2 className="hero-title text-xl md:text-2xl text-[#e8dcc0] leading-tight tracking-tight">
             FULL STACK
           </h2>
           
-          <h2 className="hero-title text-4xl md:text-5xl lg:text-6xl text-[#e8dcc0] leading-tight tracking-tight">
+          <h2 className="hero-title text-xl md:text-2xl text-[#e8dcc0] leading-tight tracking-tight">
             DEVELOPER & DATA ENGINEER
           </h2>
           
