@@ -79,3 +79,4 @@ Netlify automatically deploys when you push to your main branch. You can also:
 - **404 errors**: Ensure all routes are properly configured
 - **Image issues**: Verify image paths in `/public` folder
 
+

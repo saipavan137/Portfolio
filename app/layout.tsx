@@ -4,6 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Venkata Sai Pavan Bommuluri - Full Stack Developer & Data Engineer",
   description: "Full Stack Developer & Data Engineer specializing in building scalable, production-grade web applications and data engineering solutions",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

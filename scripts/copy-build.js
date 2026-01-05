@@ -33,3 +33,4 @@ if (fs.existsSync(sourceDir)) {
   process.exit(1);
 }
 
+
